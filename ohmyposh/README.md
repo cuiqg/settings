@@ -1,4 +1,4 @@
-### OH My Posh Theme
+# Oh My Posh Theme
 
 ## 创建 `PowerShell` 描述文件
 
