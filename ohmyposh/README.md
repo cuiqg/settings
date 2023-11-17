@@ -5,7 +5,7 @@
 ```shell
 New-Item -Path $PROFILE -Type File -Force
 ```
-> [!WARN]
+> [!WARNING]
 > 
 > PowerShell 也可能阻止运行本地脚本
 > ```shell
