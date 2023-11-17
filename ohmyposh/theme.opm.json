@@ -36,20 +36,6 @@
           "style": "plain",
           "foreground": "#BF616A",
           "template": " ✗"
-        },
-        {
-          "type": "npm",
-          "style": "plain",
-          "foreground": "#193549",
-          "background": "#ffeb3b",
-          "template": "  {{ .Full }} "
-        },
-        {
-          "type": "node",
-          "style": "plain",
-          "foreground": "#ffffff",
-          "background": "#6CA35E",
-          "template": "  {{ .Full }} "
         }
       ]
     }
