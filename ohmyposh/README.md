@@ -6,7 +6,7 @@
 New-Item -Path $PROFILE -Type File -Force
 ```
 > [!WARNING]
-> 
+>
 > PowerShell 也可能阻止运行本地脚本
 > ```shell
 > Set-ExecutionPolicy RemoteSigned
@@ -14,7 +14,7 @@ New-Item -Path $PROFILE -Type File -Force
 ## 修改描述文件
 
 ```shell
-notepad $PROFILE 
+notepad $PROFILE
 ```
 
 粘贴以下内容

@@ -39,16 +39,14 @@
         },
         {
           "type": "npm",
-          "style": "powerline",
-          "powerline_symbol": "",
+          "style": "plain",
           "foreground": "#193549",
           "background": "#ffeb3b",
-          "template": " {{ .Full }} "
+          "template": "  {{ .Full }} "
         },
         {
           "type": "node",
-          "style": "powerline",
-          "powerline_symbol": "",
+          "style": "plain",
           "foreground": "#ffffff",
           "background": "#6CA35E",
           "template": "  {{ .Full }} "
