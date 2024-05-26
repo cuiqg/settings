@@ -1,4 +1,4 @@
-* text=auto
+* text=auto eol=lf
 
 LICENSE.txt eol=crlf
-*.json linguist-language=jsonc eol=lf
+*.json linguist-language=jsonc
