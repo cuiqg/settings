@@ -1,30 +1,22 @@
 # Oh My Posh Theme
 
-## 创建 `PowerShell` 描述文件
+## 使用
 
-```shell
-New-Item -Path $PROFILE -Type File -Force
-```
-> [!WARNING]
->
-> PowerShell 也可能阻止运行本地脚本
-> ```shell
-> Set-ExecutionPolicy RemoteSigned
-> ```
-## 修改描述文件
-
-```shell
+```powershell
 notepad $PROFILE
 ```
 
+> [!NOTE]
+> When the above command gives an error, make sure to create the profile first and add the oh-my-posh init above.
+> ```powershell
+> New-Item -Path $PROFILE -Type File -Force
+> ```
+> In this scenario, it can also be that PowerShell blocks running local scripts. To solve that, set PowerShell to only require remote scripts to be
+> signed using Set-ExecutionPolicy RemoteSigned, or sign the profile.
+>
+
 粘贴以下内容
 
-```shell
-oh-my-posh init pwsh --config 'https://raw.githubusercontents.com/cuiqg/settings/main/ohmyposh/theme.opm.json' | Invoke-Expression
-```
-
-## 使配置生效
-
-```shell
-. $PROFILE
+```powershell
+oh-my-posh init pwsh --config "https://raw.githubusercontents.com/cuiqg/settings/main/ohmyposh/theme.opm.json" | Invoke-Expression
 ```
