@@ -18,5 +18,5 @@ notepad $PROFILE
 粘贴以下内容
 
 ```powershell
-oh-my-posh init pwsh --config "https://raw.githubusercontents.com/cuiqg/settings/main/ohmyposh/theme.opm.json" | Invoke-Expression
+oh-my-posh init pwsh --config "https://raw.gitmirror.com/cuiqg/settings/refs/heads/main/ohmyposh/theme.omp.json" | Invoke-Expression
 ```
