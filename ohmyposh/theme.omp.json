@@ -40,5 +40,16 @@
       ],
       "type": "prompt"
     }
+  ],
+  "tooltips": [
+    {
+      "type": "git",
+      "tips": ["git"],
+      "style": "diamond",
+      "properties": {
+        "fetch_upstream_icon": true,
+        "fetch_status": true
+      }
+    }
   ]
 }
