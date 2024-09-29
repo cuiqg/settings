@@ -1,55 +1,89 @@
 {
   "$schema": "https://raw.gitmirror.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "version": 2,
-  "auto_upgrade": false,
   "final_space": true,
+  "version": 2，
+  "auto_upgrade": true,
   "blocks": [
     {
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#98C379",
+          "foreground": "white",
+          "properties": {
+            "fetch_version": false
+          },
           "style": "plain",
-          "template": "\u279c",
+          "template": "({{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }})",
+          "type": "python"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "lightBlue",
+          "style": "plain",
+          "template": "# ",
           "type": "text"
         },
         {
-          "foreground": "#56B6C2",
+          "foreground": "red",
+          "style": "plain",
+          "template": " % ",
+          "type": "root"
+        },
+        {
+          "style": "plain",
+          "template": "<cyan>{{ .UserName }}</> <darkGray>@</> <green>{{ .HostName }}</> ",
+          "type": "session"
+        },
+        {
+          "foreground": "lightYellow",
           "properties": {
-            "style": "folder"
+            "style": "full"
           },
           "style": "plain",
-          "template": " {{ .Path }} ",
+          "template": "<darkGray>in </>{{ .Path }} ",
           "type": "path"
         },
         {
-          "foreground": "#D0666F",
-          "properties": {
-            "branch_icon": ""
-          },
           "style": "plain",
-          "template": "<#5FAAE8>git:(</>{{ .HEAD }}<#5FAAE8>)</>",
-          "type": "git"
+          "template": "<darkGray>on</> <white>git:</><cyan>{{ .HEAD }}</>{{ if .Working.Changed }}<red> x</>{{ end }} ",
+          "type": "git",
+          "properties": {
+            "fetch_status": true
+          }
         },
         {
-          "foreground": "#BF616A",
+          "foreground": "darkGray",
           "style": "plain",
-          "template": " \u2717",
+          "template": "[{{ .CurrentDate | date .Format }}]",
+          "type": "time"
+        },
+        {
+          "foreground": "red",
+          "style": "plain",
+          "template": " C:{{ if gt .Code 0 }}{{ .Code }}{{ end }} ",
           "type": "status"
         }
       ],
       "type": "prompt"
-    }
-  ],
-  "tooltips": [
+    },
     {
-      "type": "git",
-      "tips": ["git"],
-      "style": "diamond",
-      "properties": {
-        "fetch_upstream_icon": true,
-        "fetch_status": true
-      }
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "lightRed",
+          "style": "plain",
+          "template": "$",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
     }
   ]
 }
