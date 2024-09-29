@@ -76,5 +76,6 @@ rules:
   - RULE-SET,google,PROXY
   - RULE-SET,github,PROXY
   - RULE-SET,telegram,PROXY
+  - RULE-SET,other,PROXY
   - RULE-SET,xxx,PROXY
   - MATCH,DIRECT
