@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.gitmirror.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "final_space": true,
-  "version": 2，
+  "version": 2,
   "auto_upgrade": true,
   "blocks": [
     {
