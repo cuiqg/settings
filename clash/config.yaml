@@ -1,0 +1,73 @@
+mixed-port: 7890
+allow-lan: false
+external-controller: 127.0.0.1:9090
+secret: 6d77322a-2a9b-4c4f-bd96-23246d9362a3
+log-level: info
+ipv6: true
+mode: rule
+hosts:
+  '*.test': 127.0.0.1
+profile:
+  tracing: true
+
+proxies:
+  - name: "s1"
+    type: ss
+    server:
+    port:
+    cipher: aes-256-gcm
+    password: ""
+    udp: true
+
+  - name: "s2"
+    type: "vmess"
+    server:
+    port:
+    uuid:
+    alterId: 0
+    cipher: auto
+    udp: false
+
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - s1
+      - s2
+
+rule-providers:
+  google:
+    behavior: "classical"
+    type: http
+    format: yaml
+    url: "https://raw.gitmirror.com/cuiqg/settings/refs/heads/main/rulesets/google.yaml"
+    interval: 3600
+    path: ./google.yaml
+  telegram:
+    behavior: "classical"
+    type: http
+    format: yaml
+    url: "https://raw.gitmirror.com/cuiqg/settings/refs/heads/main/rulesets/telegram.yaml"
+    interval: 3600
+    path: ./telegram.yaml
+  github:
+    behavior: "classical"
+    type: http
+    format: yaml
+    url: "https://raw.gitmirror.com/cuiqg/settings/refs/heads/main/rulesets/github.yaml"
+    interval: 3600
+    path: ./github.yaml
+  xxx:
+    behavior: "classical"
+    type: http
+    format: yaml
+    url: "https://raw.gitmirror.com/cuiqg/settings/refs/heads/main/rulesets/xxx.yaml"
+    interval: 3600
+    path: ./xxx.yaml
+
+rules:
+  - RULE-SET,google,PROXY
+  - RULE-SET,github,PROXY
+  - RULE-SET,telegram,PROXY
+  - RULE-SET,xxx,PROXY
+  - MATCH,DIRECT
