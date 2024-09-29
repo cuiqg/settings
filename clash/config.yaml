@@ -57,6 +57,13 @@ rule-providers:
     url: "https://raw.gitmirror.com/cuiqg/settings/refs/heads/main/clash/rulesets/github.yaml"
     interval: 3600
     path: ./github.yaml
+  social:
+    behavior: "classical"
+    type: http
+    format: yaml
+    url: "https://raw.gitmirror.com/cuiqg/settings/refs/heads/main/clash/rulesets/social.yaml"
+    interval: 3600
+    path: ./social.yaml
   other:
     behavior: "classical"
     type: http
@@ -76,6 +83,7 @@ rules:
   - RULE-SET,google,PROXY
   - RULE-SET,github,PROXY
   - RULE-SET,telegram,PROXY
+  - RULE-SET,social,PROXY
   - RULE-SET,other,PROXY
   - RULE-SET,xxx,PROXY
   - MATCH,DIRECT
