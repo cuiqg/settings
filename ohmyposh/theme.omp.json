@@ -8,79 +8,34 @@
       "alignment": "left",
       "segments": [
         {
-          "foreground": "white",
-          "properties": {
-            "fetch_version": false
-          },
+          "foreground": "#98C379",
           "style": "plain",
-          "template": "({{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }})",
-          "type": "python"
-        }
-      ],
-      "type": "prompt"
-    },
-    {
-      "alignment": "left",
-      "newline": true,
-      "segments": [
-        {
-          "foreground": "lightBlue",
-          "style": "plain",
-          "template": "# ",
+          "template": "\u279c",
           "type": "text"
         },
         {
-          "foreground": "red",
-          "style": "plain",
-          "template": " % ",
-          "type": "root"
-        },
-        {
-          "style": "plain",
-          "template": "<cyan>{{ .UserName }}</> <darkGray>@</> <green>{{ .HostName }}</> ",
-          "type": "session"
-        },
-        {
-          "foreground": "lightYellow",
+          "foreground": "#56B6C2",
           "properties": {
-            "style": "full"
+            "style": "folder"
           },
           "style": "plain",
-          "template": "<darkGray>in </>{{ .Path }} ",
+          "template": " {{ .Path }} ",
           "type": "path"
         },
         {
-          "style": "plain",
-          "template": "<darkGray>on</> <white>git:</><cyan>{{ .HEAD }}</>{{ if .Working.Changed }}<red> x</>{{ end }} ",
-          "type": "git",
+          "foreground": "#D0666F",
           "properties": {
-            "fetch_status": true
-          }
+            "branch_icon": ""
+          },
+          "style": "plain",
+          "template": "<#5FAAE8>git:(</>{{ .HEAD }}<#5FAAE8>)</>",
+          "type": "git"
         },
         {
-          "foreground": "darkGray",
+          "foreground": "#BF616A",
           "style": "plain",
-          "template": "[{{ .CurrentDate | date .Format }}]",
-          "type": "time"
-        },
-        {
-          "foreground": "red",
-          "style": "plain",
-          "template": " C:{{ if gt .Code 0 }}{{ .Code }}{{ end }} ",
+          "template": " \u2717",
           "type": "status"
-        }
-      ],
-      "type": "prompt"
-    },
-    {
-      "alignment": "left",
-      "newline": true,
-      "segments": [
-        {
-          "foreground": "lightRed",
-          "style": "plain",
-          "template": "$",
-          "type": "text"
         }
       ],
       "type": "prompt"
