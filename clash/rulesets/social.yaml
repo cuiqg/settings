@@ -1,2 +1,3 @@
 payload:
   - DOMAIN-SUFFIX,x.com
+  - DOMAIN-SUFFIX,gravatar.com
