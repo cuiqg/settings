@@ -1,5 +1,8 @@
 * text=auto eol=lf
 
-*.json linguist-language=jsonc
 /.vscode  export-ignore
 /.github  export-ignore
+
+*.json linguist-language=json
+*.md linguist-language=markdown
+*.yaml linguist-language=yaml
