@@ -1,3 +1,4 @@
 payload:
   - DOMAIN-SUFFIX,v2ex.com
   - DOMAIN-SUFFIX,imgur.com
+  - DOMAIN-SUFFIX,vercel.com
