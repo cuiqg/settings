@@ -40,42 +40,42 @@ rule-providers:
     behavior: "classical"
     type: http
     format: yaml
-    url: "https://raw.gitmirror.com/cuiqg/settings/refs/heads/main/clash/rulesets/google.yaml"
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/google.yaml"
     interval: 3600
     path: ./google.yaml
   telegram:
     behavior: "classical"
     type: http
     format: yaml
-    url: "https://raw.gitmirror.com/cuiqg/settings/refs/heads/main/clash/rulesets/telegram.yaml"
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/telegram.yaml"
     interval: 3600
     path: ./telegram.yaml
   github:
     behavior: "classical"
     type: http
     format: yaml
-    url: "https://raw.gitmirror.com/cuiqg/settings/refs/heads/main/clash/rulesets/github.yaml"
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/github.yaml"
     interval: 3600
     path: ./github.yaml
   social:
     behavior: "classical"
     type: http
     format: yaml
-    url: "https://raw.gitmirror.com/cuiqg/settings/refs/heads/main/clash/rulesets/social.yaml"
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/social.yaml"
     interval: 3600
     path: ./social.yaml
   other:
     behavior: "classical"
     type: http
     format: yaml
-    url: "https://raw.gitmirror.com/cuiqg/settings/refs/heads/main/clash/rulesets/other.yaml"
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/other.yaml"
     interval: 3600
     path: ./other.yaml
   xxx:
     behavior: "classical"
     type: http
     format: yaml
-    url: "https://raw.gitmirror.com/cuiqg/settings/refs/heads/main/clash/rulesets/xxx.yaml"
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/xxx.yaml"
     interval: 3600
     path: ./xxx.yaml
 
