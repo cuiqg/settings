@@ -40,50 +40,50 @@ rule-providers:
     behavior: "classical"
     type: http
     format: yaml
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/google.yaml"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/google.yaml"
     interval: 3600
     path: ./google.yaml
   telegram:
     behavior: "classical"
     type: http
     format: yaml
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/telegram.yaml"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/telegram.yaml"
     interval: 3600
     path: ./telegram.yaml
   github:
     behavior: "classical"
     type: http
     format: yaml
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/github.yaml"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/github.yaml"
     interval: 3600
     path: ./github.yaml
-  social:
+  twitter:
     behavior: "classical"
     type: http
     format: yaml
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/social.yaml"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/twitter.yaml"
     interval: 3600
-    path: ./social.yaml
+    path: ./twitter.yaml
   other:
     behavior: "classical"
     type: http
     format: yaml
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/other.yaml"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/other.yaml"
     interval: 3600
     path: ./other.yaml
   xxx:
     behavior: "classical"
     type: http
     format: yaml
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/xxx.yaml"
+    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/xxx.yaml"
     interval: 3600
     path: ./xxx.yaml
 
 rules:
   - RULE-SET,google,PROXY
   - RULE-SET,github,PROXY
+  - RULE-SET,twitter,PROXY
   - RULE-SET,telegram,PROXY
-  - RULE-SET,social,PROXY
   - RULE-SET,other,PROXY
   - RULE-SET,xxx,PROXY
   - MATCH,DIRECT

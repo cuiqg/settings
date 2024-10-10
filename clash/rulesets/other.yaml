@@ -3,3 +3,7 @@ payload:
   - DOMAIN-SUFFIX,imgur.com
   - DOMAIN-SUFFIX,vercel.com
   - DOMAIN-SUFFIX,duckduckgo.com
+  - DOMAIN-SUFFIX,gravatar.com
+  - DOMAIN-SUFFIX,d.to
+  - DOMAIN-SUFFIX,free.com.tw
+  - DOMAIN-SUFFIX,medium.com
