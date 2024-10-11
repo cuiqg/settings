@@ -23,3 +23,6 @@ payload:
 
   # .Goog
   - DOMAIN-SUFFIX,usercontent.goog
+
+  # Web.dev
+  - DOMAIN-SUFFIX,web.dev

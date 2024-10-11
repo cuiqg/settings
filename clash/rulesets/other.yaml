@@ -9,3 +9,4 @@ payload:
   - DOMAIN-SUFFIX,medium.com
   - DOMAIN-SUFFIX,justmysocks.net
   - DOMAIN-SUFFIX,shadowsocks.org
+  - DOMAIN-SUFFIX,reddit.com
