@@ -26,3 +26,4 @@ payload:
 
   # Web.dev
   - DOMAIN-SUFFIX,web.dev
+  - DOMAIN-SUFFIX,appspot.com
