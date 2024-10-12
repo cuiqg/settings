@@ -39,45 +39,45 @@ rule-providers:
   google:
     behavior: "classical"
     type: http
-    format: yaml
-    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/google.yaml"
+    format: text
+    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/google.list"
     interval: 3600
-    path: ./google.yaml
+    path: ./google.txt
   telegram:
     behavior: "classical"
     type: http
-    format: yaml
-    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/telegram.yaml"
+    format: text
+    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/telegram.list"
     interval: 3600
-    path: ./telegram.yaml
+    path: ./telegram.txt
   github:
     behavior: "classical"
     type: http
-    format: yaml
-    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/github.yaml"
+    format: text
+    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/github.list"
     interval: 3600
-    path: ./github.yaml
+    path: ./github.txt
   twitter:
     behavior: "classical"
     type: http
-    format: yaml
-    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/twitter.yaml"
+    format: text
+    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/twitter.list"
     interval: 3600
-    path: ./twitter.yaml
+    path: ./twitter.txt
   other:
     behavior: "classical"
     type: http
-    format: yaml
-    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/other.yaml"
+    format: text
+    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/other.list"
     interval: 3600
-    path: ./other.yaml
+    path: ./other.txt
   xxx:
     behavior: "classical"
     type: http
-    format: yaml
-    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/xxx.yaml"
+    format: text
+    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/xxx.list"
     interval: 3600
-    path: ./xxx.yaml
+    path: ./xxx.txt
 
 rules:
   - RULE-SET,google,PROXY
