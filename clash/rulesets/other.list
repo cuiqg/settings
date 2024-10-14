@@ -21,3 +21,8 @@ DOMAIN-SUFFIX,redditmedia.com
 
 # ControlD
 DOMAIN-SUFFIX,controld.com
+
+
+# Vercel
+DOMAIN-SUFFIX,vercel.com
+DOMAIN-SUFFIX,vercel.app
