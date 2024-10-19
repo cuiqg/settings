@@ -5,6 +5,7 @@ DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,withgoogle.com
 
 # Chrome
 DOMAIN-SUFFIX,chrome.com
