@@ -30,3 +30,13 @@ DOMAIN-SUFFIX,vercel.app
 
 # Docker
 DOMAIN-SUFFIX,docker.com
+
+
+# Deviantart
+DOMAIN-SUFFIX,deviantart.com
+DOMAIN-SUFFIX,deviantart.net
+DOMAIN-SUFFIX,parastorage.com
+
+# Patreon
+DOMAIN-SUFFIX,patreon.com
+DOMAIN-SUFFIX,patreonusercontent.com
