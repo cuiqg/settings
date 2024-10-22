@@ -40,49 +40,49 @@ rule-providers:
     behavior: "classical"
     type: http
     format: text
-    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/google.list"
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/google.list"
     interval: 3600
     path: ./google.txt
   telegram:
     behavior: "classical"
     type: http
     format: text
-    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/telegram.list"
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/telegram.list"
     interval: 3600
     path: ./telegram.txt
   github:
     behavior: "classical"
     type: http
     format: text
-    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/github.list"
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/github.list"
     interval: 3600
     path: ./github.txt
   twitter:
     behavior: "classical"
     type: http
     format: text
-    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/twitter.list"
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/twitter.list"
     interval: 3600
     path: ./twitter.txt
   meta:
     behavior: "classical"
     type: http
     format: text
-    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/meta.list"
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/meta.list"
     interval: 3600
     path: ./meta.txt
   other:
     behavior: "classical"
     type: http
     format: text
-    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/other.list"
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/other.list"
     interval: 3600
     path: ./other.txt
   xxx:
     behavior: "classical"
     type: http
     format: text
-    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/xxx.list"
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/xxx.list"
     interval: 3600
     path: ./xxx.txt
 
@@ -91,7 +91,7 @@ rules:
   - RULE-SET,github,PROXY
   - RULE-SET,twitter,PROXY
   - RULE-SET,meta,PROXY
+  - RULE-SET,xxx,PROXY
   - RULE-SET,telegram,PROXY
   - RULE-SET,other,PROXY
-  - RULE-SET,xxx,PROXY
   - MATCH,DIRECT
