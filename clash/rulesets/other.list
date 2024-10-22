@@ -40,3 +40,7 @@ DOMAIN-SUFFIX,parastorage.com
 # Patreon
 DOMAIN-SUFFIX,patreon.com
 DOMAIN-SUFFIX,patreonusercontent.com
+
+
+# Live
+DOMAIN-SUFFIX,sooplive.co.kr

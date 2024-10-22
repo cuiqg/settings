@@ -64,6 +64,13 @@ rule-providers:
     url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/twitter.list"
     interval: 3600
     path: ./twitter.txt
+  meta:
+    behavior: "classical"
+    type: http
+    format: text
+    url: "https://ghp.ci/https://raw.githubusercontent.com/cuiqg/settings/main/clash/rulesets/meta.list"
+    interval: 3600
+    path: ./meta.txt
   other:
     behavior: "classical"
     type: http
@@ -83,6 +90,7 @@ rules:
   - RULE-SET,google,PROXY
   - RULE-SET,github,PROXY
   - RULE-SET,twitter,PROXY
+  - RULE-SET,meta,PROXY
   - RULE-SET,telegram,PROXY
   - RULE-SET,other,PROXY
   - RULE-SET,xxx,PROXY
