@@ -1,0 +1,17 @@
+# Develop
+
+# Vercel
+DOMAIN-SUFFIX,vercel.com
+DOMAIN-SUFFIX,vercel.app
+
+
+# RequireJS
+DOMAIN-SUFFIX,requirejs.org
+
+
+# jsDelivr
+DOMAIN-SUFFIX,jsdelivr.com
+
+# NPM
+DOMAIN-SUFFIX,npmjs.com
+DOMAIN-SUFFIX,npmjs.org

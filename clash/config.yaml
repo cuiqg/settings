@@ -71,6 +71,13 @@ rule-providers:
     url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/meta.list"
     interval: 3600
     path: ./meta.txt
+  develop:
+    behavior: "classical"
+    type: http
+    format: text
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/develop.list"
+    interval: 3600
+    path: ./develop.txt
   other:
     behavior: "classical"
     type: http
@@ -90,8 +97,9 @@ rules:
   - RULE-SET,google,PROXY
   - RULE-SET,github,PROXY
   - RULE-SET,twitter,PROXY
+  - RULE-SET,telegram,PROXY
+  - RULE-SET,develop.PROXY
   - RULE-SET,meta,PROXY
   - RULE-SET,xxx,PROXY
-  - RULE-SET,telegram,PROXY
   - RULE-SET,other,PROXY
   - MATCH,DIRECT
