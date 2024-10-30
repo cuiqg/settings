@@ -98,7 +98,7 @@ rules:
   - RULE-SET,github,PROXY
   - RULE-SET,twitter,PROXY
   - RULE-SET,telegram,PROXY
-  - RULE-SET,develop.PROXY
+  - RULE-SET,develop,PROXY
   - RULE-SET,meta,PROXY
   - RULE-SET,xxx,PROXY
   - RULE-SET,other,PROXY

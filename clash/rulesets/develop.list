@@ -15,3 +15,7 @@ DOMAIN-SUFFIX,jsdelivr.com
 # NPM
 DOMAIN-SUFFIX,npmjs.com
 DOMAIN-SUFFIX,npmjs.org
+
+
+# Nuxt
+DOMAIN-SUFFIX,nuxt.com
