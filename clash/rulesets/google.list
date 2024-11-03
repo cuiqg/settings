@@ -3,7 +3,11 @@
 DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,googlesource.com
 DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,googlehosted.com
+DOMAIN-SUFFIX,googleoptimize.com
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,withgoogle.com
 
@@ -23,6 +27,7 @@ DOMAIN-SUFFIX,youtube-nocookie.com
 # .Google
 DOMAIN-SUFFIX,about.google
 DOMAIN-SUFFIX,blog.google
+DOMAIN-SUFFIX,android.com
 
 # .Goog
 DOMAIN-SUFFIX,usercontent.goog
