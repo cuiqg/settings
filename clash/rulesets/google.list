@@ -27,6 +27,8 @@ DOMAIN-SUFFIX,youtube-nocookie.com
 # .Google
 DOMAIN-SUFFIX,about.google
 DOMAIN-SUFFIX,blog.google
+
+# Android
 DOMAIN-SUFFIX,android.com
 
 # .Goog
