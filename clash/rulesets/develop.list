@@ -23,3 +23,5 @@ DOMAIN-SUFFIX,nuxt.com
 
 # Hugging Face
 DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,huggingface.com
+DOMAIN-SUFFIX,hf.space
