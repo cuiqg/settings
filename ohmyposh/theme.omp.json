@@ -43,7 +43,7 @@
       "type": "prompt"
     }
   ],
-  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+  "console_title_template": "{{ .PSWD }}",
   "final_space": true,
   "version": 2,
   "auto_upgrade": true,
