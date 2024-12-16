@@ -85,6 +85,13 @@ rule-providers:
     url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/other.list"
     interval: 3600
     path: ./other.txt
+  pinterest:
+    behavior: "classical"
+    type: http
+    format: text
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/pinterest.list"
+    interval: 3600
+    path: ./pinterest.txt
   xxx:
     behavior: "classical"
     type: http
