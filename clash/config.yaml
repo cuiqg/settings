@@ -39,73 +39,73 @@ rule-providers:
   google:
     behavior: "classical"
     type: http
-    format: text
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/google.list"
+    format: yaml
+    proxy: DIRECT
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/google.yaml"
     interval: 3600
-    path: ./google.txt
+    path: ./google.yaml
   telegram:
     behavior: "classical"
     type: http
-    format: text
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/telegram.list"
+    format: yaml
+    proxy: DIRECT
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/telegram.yaml"
     interval: 3600
-    path: ./telegram.txt
+    path: ./telegram.yaml
   github:
     behavior: "classical"
     type: http
-    format: text
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/github.list"
+    format: yaml
+    proxy: DIRECT
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/github.yaml"
     interval: 3600
-    path: ./github.txt
+    path: ./github.yaml
   twitter:
     behavior: "classical"
     type: http
-    format: text
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/twitter.list"
+    format: yaml
+    proxy: DIRECT
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/twitter.yaml"
     interval: 3600
-    path: ./twitter.txt
+    path: ./twitter.yaml
   meta:
     behavior: "classical"
     type: http
-    format: text
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/meta.list"
+    format: yaml
+    proxy: DIRECT
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/meta.yaml"
     interval: 3600
-    path: ./meta.txt
-  develop:
-    behavior: "classical"
-    type: http
-    format: text
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/develop.list"
-    interval: 3600
-    path: ./develop.txt
+    path: ./meta.yaml
   other:
     behavior: "classical"
     type: http
-    format: text
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/other.list"
+    format: yaml
+    proxy: DIRECT
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/other.yaml"
     interval: 3600
-    path: ./other.txt
+    path: ./other.yaml
   pinterest:
     behavior: "classical"
     type: http
-    format: text
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/pinterest.list"
+    format: yaml
+    proxy: DIRECT
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/pinterest.yaml"
     interval: 3600
-    path: ./pinterest.txt
+    path: ./pinterest.yaml
   xxx:
     behavior: "classical"
     type: http
-    format: text
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/xxx.list"
+    format: yaml
+    proxy: DIRECT
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/xxx.yaml"
     interval: 3600
-    path: ./xxx.txt
+    path: ./xxx.yaml
 
 rules:
   - RULE-SET,google,PROXY
   - RULE-SET,github,PROXY
   - RULE-SET,twitter,PROXY
   - RULE-SET,telegram,PROXY
-  - RULE-SET,develop,PROXY
   - RULE-SET,meta,PROXY
   - RULE-SET,xxx,PROXY
   - RULE-SET,other,PROXY
