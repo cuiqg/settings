@@ -84,6 +84,14 @@ rule-providers:
     url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/pinterest.yaml"
     interval: 3600
     path: ./rulesets/pinterest.yaml
+  steam:
+    behavior: "classical"
+    type: http
+    format: yaml
+    proxy: DIRECT
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/steam.yaml"
+    interval: 3600
+    path: ./rulesets/steam.yaml
   discord:
     behavior: "classical"
     type: http
@@ -117,6 +125,7 @@ rules:
   - RULE-SET,meta,PROXY
   - RULE-SET,pinterest,PROXY
   - RULE-SET,discord,PROXY
+  - RULE-SET,steam,PROXY
   - RULE-SET,xxx,PROXY
   - RULE-SET,other,PROXY
   - MATCH,DIRECT
