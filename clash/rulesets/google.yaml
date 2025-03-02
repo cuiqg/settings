@@ -4,6 +4,7 @@ payload:
   - DOMAIN-SUFFIX,googlevideo.com
   - DOMAIN-SUFFIX,googlesource.com
   - DOMAIN-SUFFIX,googleusercontent.com
+  - DOMAIN-SUFFIX,googleadapis.com
   - DOMAIN-SUFFIX,googleadservices.com
   - DOMAIN-SUFFIX,googlehosted.com
   - DOMAIN-SUFFIX,googleoptimize.com
@@ -23,10 +24,13 @@ payload:
   # .Google
   - DOMAIN-SUFFIX,about.google
   - DOMAIN-SUFFIX,blog.google
+  - DOMAIN-SUFFIX,labs.google
   # Android
   - DOMAIN-SUFFIX,android.com
   # .Goog
   - DOMAIN-SUFFIX,usercontent.goog
+  - DOMAIN-SUFFIX,floonet.goog
+  - DOMAIN-SUFFIX,pki.goog
   # Web.dev
   - DOMAIN-SUFFIX,web.dev
   - DOMAIN-SUFFIX,appspot.com
