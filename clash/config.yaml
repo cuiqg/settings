@@ -43,7 +43,7 @@ rule-providers:
     proxy: DIRECT
     url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/google.yaml"
     interval: 3600
-    path: ./google.yaml
+    path: ./rulesets/google.yaml
   telegram:
     behavior: "classical"
     type: http
@@ -51,7 +51,7 @@ rule-providers:
     proxy: DIRECT
     url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/telegram.yaml"
     interval: 3600
-    path: ./telegram.yaml
+    path: ./rulesets/telegram.yaml
   github:
     behavior: "classical"
     type: http
@@ -59,7 +59,7 @@ rule-providers:
     proxy: DIRECT
     url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/github.yaml"
     interval: 3600
-    path: ./github.yaml
+    path: ./rulesets/github.yaml
   twitter:
     behavior: "classical"
     type: http
@@ -67,7 +67,7 @@ rule-providers:
     proxy: DIRECT
     url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/twitter.yaml"
     interval: 3600
-    path: ./twitter.yaml
+    path: ./rulesets/twitter.yaml
   meta:
     behavior: "classical"
     type: http
@@ -75,15 +75,7 @@ rule-providers:
     proxy: DIRECT
     url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/meta.yaml"
     interval: 3600
-    path: ./meta.yaml
-  other:
-    behavior: "classical"
-    type: http
-    format: yaml
-    proxy: DIRECT
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/other.yaml"
-    interval: 3600
-    path: ./other.yaml
+    path: ./rulesets/meta.yaml
   pinterest:
     behavior: "classical"
     type: http
@@ -91,7 +83,7 @@ rule-providers:
     proxy: DIRECT
     url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/pinterest.yaml"
     interval: 3600
-    path: ./pinterest.yaml
+    path: ./rulesets/pinterest.yaml
   xxx:
     behavior: "classical"
     type: http
@@ -99,7 +91,15 @@ rule-providers:
     proxy: DIRECT
     url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/xxx.yaml"
     interval: 3600
-    path: ./xxx.yaml
+    path: ./rulesets/xxx.yaml
+  other:
+    behavior: "classical"
+    type: http
+    format: yaml
+    proxy: DIRECT
+    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/other.yaml"
+    interval: 3600
+    path: ./rulesets/other.yaml
 
 rules:
   - RULE-SET,google,PROXY
