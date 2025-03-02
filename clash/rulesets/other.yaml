@@ -49,3 +49,4 @@ payload:
   - DOMAIN-SUFFIX,bit.ly
   # Discord
   - DOMAIN-SUFFIX,discord.gg
+  - DOMAIN-SUFFIX,discord.com
