@@ -47,3 +47,6 @@ payload:
   - DOMAIN-SUFFIX,wikipedia.org
   - DOMAIN-SUFFIX,unsplash.com
   - DOMAIN-SUFFIX,bit.ly
+  # Stack Overflow
+  # Stack Exchange
+  - DOMAIN-SUFFIX,sstatic.net
