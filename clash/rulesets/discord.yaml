@@ -7,7 +7,6 @@ payload:
   - DOMAIN-SUFFIX,discord.dev
   - DOMAIN-SUFFIX,discord.gg
   - DOMAIN-SUFFIX,discord.gift
-  - DOMAIN-SUFFIX,discord.gifts
   - DOMAIN-SUFFIX,discord.media
   - DOMAIN-SUFFIX,discord.new
   - DOMAIN-SUFFIX,discord.store
