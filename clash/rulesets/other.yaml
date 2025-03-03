@@ -50,3 +50,6 @@ payload:
   # Stack Overflow
   # Stack Exchange
   - DOMAIN-SUFFIX,sstatic.net
+  # Electronjs
+  - DOMAIN-SUFFIX,electronjs.org
+  - DOMAIN-SUFFIX,electronforge.io
