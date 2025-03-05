@@ -53,3 +53,5 @@ payload:
   # Electronjs
   - DOMAIN-SUFFIX,electronjs.org
   - DOMAIN-SUFFIX,electronforge.io
+  # Netlify
+  - DOMAIN-SUFFIX,netlify.com
