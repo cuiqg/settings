@@ -55,3 +55,6 @@ payload:
   - DOMAIN-SUFFIX,electronforge.io
   # Netlify
   - DOMAIN-SUFFIX,netlify.com
+  # OpenAI
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,chatgpt.com
