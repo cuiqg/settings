@@ -73,7 +73,7 @@ rule-providers:
     type: http
     format: yaml
     proxy: DIRECT
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/meta.yaml"
+    url: "https://cdn.jsdelivr.net/gh/cuiqg/settings@main/clash/rulesets/meta.yaml"
     interval: 3600
     path: ./rulesets/meta.yaml
   pinterest:
@@ -81,7 +81,7 @@ rule-providers:
     type: http
     format: yaml
     proxy: DIRECT
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/pinterest.yaml"
+    url: "https://cdn.jsdelivr.net/gh/cuiqg/settings@main/clash/rulesets/pinterest.yaml"
     interval: 3600
     path: ./rulesets/pinterest.yaml
   steam:
@@ -89,7 +89,7 @@ rule-providers:
     type: http
     format: yaml
     proxy: DIRECT
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/steam.yaml"
+    url: "https://cdn.jsdelivr.net/gh/cuiqg/settings@main/clash/rulesets/steam.yaml"
     interval: 3600
     path: ./rulesets/steam.yaml
   discord:
@@ -97,7 +97,7 @@ rule-providers:
     type: http
     format: yaml
     proxy: DIRECT
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/discord.yaml"
+    url: "https://cdn.jsdelivr.net/gh/cuiqg/settings@main/clash/rulesets/discord.yaml"
     interval: 3600
     path: ./rulesets/discord.yaml
   xxx:
@@ -105,7 +105,7 @@ rule-providers:
     type: http
     format: yaml
     proxy: DIRECT
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/xxx.yaml"
+    url: "https://cdn.jsdelivr.net/gh/cuiqg/settings@main/clash/rulesets/xxx.yaml"
     interval: 3600
     path: ./rulesets/xxx.yaml
   other:
@@ -113,7 +113,7 @@ rule-providers:
     type: http
     format: yaml
     proxy: DIRECT
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/other.yaml"
+    url: "https://cdn.jsdelivr.net/gh/cuiqg/settings@main/clash/rulesets/other.yaml"
     interval: 3600
     path: ./rulesets/other.yaml
 
