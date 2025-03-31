@@ -1,6 +1,5 @@
 # Github
 payload:
-  - DOMAIN-SUFFIX,atom.io
   - DOMAIN-SUFFIX,dependabot.com
   - DOMAIN-SUFFIX,ghcr.io
   - DOMAIN-SUFFIX,git.io
@@ -22,3 +21,9 @@ payload:
   - DOMAIN-SUFFIX,opensource.guide
   - DOMAIN-SUFFIX,repo.new
   - DOMAIN-SUFFIX,thegithubshop.com
+  ## >> Atom
+  - DOMAIN-SUFFIX,atom.io
+  ## >> Npmjs
+  - DOMAIN-SUFFIX,npmjs.com
+  - DOMAIN-SUFFIX,npmjs.org
+  - DOMAIN-SUFFIX,npm.community
