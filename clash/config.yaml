@@ -9,6 +9,29 @@ hosts:
   '*.test': 127.0.0.1
 profile:
   tracing: true
+  store-selected: true
+  store-fake-ip: true
+
+geox-url:
+  geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+  geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+  mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
+
+geo-auto-update: true
+geo-update-interval: 24
+
+dns:
+  enable: true
+  cache-algorithm: arc
+  ipv6: true
+  default-nameserver:
+    - 94.140.14.14
+    - 94.140.15.15
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 1.1.1.1
+    - 1.0.0.1
 
 proxies:
   - name: "s1"
