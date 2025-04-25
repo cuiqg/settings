@@ -13,9 +13,9 @@ profile:
   store-fake-ip: true
 
 geox-url:
-  geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
-  geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
-  mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
+  geoip: "https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+  geosite: "https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+  mmdb: "https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
 
 geo-auto-update: true
 geo-update-interval: 24
@@ -74,7 +74,7 @@ rule-providers:
     interval: 10
     format: yaml
     size-limit: 0
-    url: 'https://raw.githubusercontent.com/cuiqg/settings/refs/heads/main/clash/rulesets/tsui.yaml'
+    url: "https://cdn.jsdmirror.com/gh/cuiqg/settings/clash/rulesets/tsui.yaml"
     path: ./rulesets/tsui.yaml
 
 rules:
