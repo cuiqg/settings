@@ -35,97 +35,28 @@ proxy-groups:
       - s1
       - s2
 
+  - name: "BALANCE"
+    type: load-balance
+    strategy: consistent-hashing
+    interval: 10
+    url: "http://cp.cloudflare.com/generate_204"
+    proxies:
+      - s1
+      - s2
+
 rule-providers:
-  google:
-    behavior: "classical"
+  tsui:
     type: http
+    behavior: classical
+    interval: 10
     format: yaml
-    proxy: DIRECT
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/google.yaml"
-    interval: 3600
-    path: ./rulesets/google.yaml
-  telegram:
-    behavior: "classical"
-    type: http
-    format: yaml
-    proxy: DIRECT
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/telegram.yaml"
-    interval: 3600
-    path: ./rulesets/telegram.yaml
-  github:
-    behavior: "classical"
-    type: http
-    format: yaml
-    proxy: DIRECT
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/github.yaml"
-    interval: 3600
-    path: ./rulesets/github.yaml
-  twitter:
-    behavior: "classical"
-    type: http
-    format: yaml
-    proxy: DIRECT
-    url: "https://raw.gitmirror.com/cuiqg/settings/main/clash/rulesets/twitter.yaml"
-    interval: 3600
-    path: ./rulesets/twitter.yaml
-  meta:
-    behavior: "classical"
-    type: http
-    format: yaml
-    proxy: DIRECT
-    url: "https://cdn.jsdelivr.net/gh/cuiqg/settings@main/clash/rulesets/meta.yaml"
-    interval: 3600
-    path: ./rulesets/meta.yaml
-  pinterest:
-    behavior: "classical"
-    type: http
-    format: yaml
-    proxy: DIRECT
-    url: "https://cdn.jsdelivr.net/gh/cuiqg/settings@main/clash/rulesets/pinterest.yaml"
-    interval: 3600
-    path: ./rulesets/pinterest.yaml
-  steam:
-    behavior: "classical"
-    type: http
-    format: yaml
-    proxy: DIRECT
-    url: "https://cdn.jsdelivr.net/gh/cuiqg/settings@main/clash/rulesets/steam.yaml"
-    interval: 3600
-    path: ./rulesets/steam.yaml
-  discord:
-    behavior: "classical"
-    type: http
-    format: yaml
-    proxy: DIRECT
-    url: "https://cdn.jsdelivr.net/gh/cuiqg/settings@main/clash/rulesets/discord.yaml"
-    interval: 3600
-    path: ./rulesets/discord.yaml
-  xxx:
-    behavior: "classical"
-    type: http
-    format: yaml
-    proxy: DIRECT
-    url: "https://cdn.jsdelivr.net/gh/cuiqg/settings@main/clash/rulesets/xxx.yaml"
-    interval: 3600
-    path: ./rulesets/xxx.yaml
-  other:
-    behavior: "classical"
-    type: http
-    format: yaml
-    proxy: DIRECT
-    url: "https://cdn.jsdelivr.net/gh/cuiqg/settings@main/clash/rulesets/other.yaml"
-    interval: 3600
-    path: ./rulesets/other.yaml
+    size-limit: 0
+    url: 'https://hub.gitmirror.com/https://raw.githubusercontent.com/cuiqg/settings/refs/heads/main/clash/rulesets/tsui.yaml'
+    path: ./rulesets/tsui.yaml
 
 rules:
-  - RULE-SET,google,PROXY
-  - RULE-SET,github,PROXY
-  - RULE-SET,twitter,PROXY
-  - RULE-SET,telegram,PROXY
-  - RULE-SET,meta,PROXY
-  - RULE-SET,pinterest,PROXY
-  - RULE-SET,discord,PROXY
-  - RULE-SET,steam,PROXY
-  - RULE-SET,xxx,PROXY
-  - RULE-SET,other,PROXY
+  - GEOSITE,gfw,PROXY
+  - GEOIP,telegram,PROXY
+  - RULE-SET,tsui,BALANCE
+  - GEOIP,CN,DIRECT,no-resolve
   - MATCH,DIRECT
