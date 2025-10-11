@@ -1,6 +1,68 @@
 payload:
   # Google
-  - DOMAIN-SUFFIX, google.com
-  - DOMAIN-SUFFIX, gstatic.com
-  - DOMAIN-SUFFIX, github.com
-  - DOMAIN-SUFFIX, chatgpt.com
+  - DOMAIN-SUFFIX,google.com
+  - DOMAIN-SUFFIX,googleapis.com
+  - DOMAIN-SUFFIX,googlevideo.com
+  - DOMAIN-SUFFIX,googleusercontent.com
+  - DOMAIN-SUFFIX,gstatic.com
+
+  # YouTube
+  - DOMAIN,youtu.be
+  - DOMAIN-SUFFIX,youtube.com
+  - DOMAIN-SUFFIX,youtube-nocookie.com
+  - DOMAIN-SUFFIX,ytimg.com
+  - DOMAIN-SUFFIX,ggpht.com
+
+  # Github
+  - DOMAIN-SUFFIX,github.com
+  - DOMAIN-SUFFIX,githubassets.com
+  - DOMAIN-SUFFIX,githubusercontent.com
+  - DOMAIN-SUFFIX,github.io
+  - DOMAIN-SUFFIX,github.dev
+  - DOMAIN-SUFFIX,github.blog
+
+  # ChatGPT
+  - DOMAIN-SUFFIX,chatgpt.com
+
+  # Twitter
+  - DOMAIN-SUFFIX,twitter.com
+  - DOMAIN-SUFFIX,twimg.com
+  - DOMAIN-SUFFIX,x.com
+
+  # Telegram
+  - DOMAIN-SUFFIX,telegram.org
+  - DOMAIN-SUFFIX,telegram.me
+  - DOMAIN-SUFFIX,telegram.space
+  - DOMAIN-SUFFIX,telegram.dog
+  - DOMAIN-SUFFIX,telegra.ph
+  - DOMAIN-SUFFIX,quiz.directory
+  - DOMAIN-SUFFIX,graph.org
+  - DOMAIN-SUFFIX,tg.dev
+  - DOMAIN,t.me
+  - DOMAIN,t.co
+  - IP-CIDR,91.108.56.0/22
+  - IP-CIDR,91.108.4.0/22
+  - IP-CIDR,91.108.8.0/22
+  - IP-CIDR,91.108.16.0/22
+  - IP-CIDR,91.108.12.0/22
+  - IP-CIDR,149.154.160.0/20
+  - IP-CIDR,91.105.192.0/23
+  - IP-CIDR,91.108.20.0/22
+  - IP-CIDR,185.76.151.0/24
+  - IP-CIDR6,2001:b28:f23d::/48
+  - IP-CIDR6,2001:b28:f23f::/48
+  - IP-CIDR6,2001:67c:4e8::/48
+  - IP-CIDR6,2001:b28:f23c::/48
+  - IP-CIDR6,2a0a:f280::/32
+  ##########=====PORN=====##########
+  - DOMAIN-SUFFIX,xvideos.com
+  # - DOMAIN-SUFFIX,xvideos-cdn.com
+  - DOMAIN-SUFFIX,xnxx.com
+  # - DOMAIN-SUFFIX,xnxx-cdn.com
+  - DOMAIN-SUFFIX,chaturbate.com
+  # - DOMAIN-SUFFIX,mmcdn.com
+  - DOMAIN-SUFFIX,theporndude.com
+  - DOMAIN-SUFFIX,hjd2048.com
+  - DOMAIN-SUFFIX,t66y.com
+  ##########=====OTHER=====##########
+  - DOMAIN-SUFFIX,tgstat.com

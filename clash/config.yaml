@@ -83,6 +83,6 @@ rule-providers:
     proxy: DIRECT
 
 rules:
-  - RULE-SET,tsui,BALANCE
+  - RULE-SET,tsui,PROXY
   - GEOIP,CN,DIRECT,no-resolve
   - MATCH,DIRECT
