@@ -12,14 +12,6 @@ profile:
   store-selected: true
   store-fake-ip: true
 
-geox-url:
-  geoip: "https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
-  geosite: "https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
-  mmdb: "https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/geoip.metadb"
-
-geo-auto-update: true
-geo-update-interval: 24
-
 dns:
   enable: false
   cache-algorithm: arc
@@ -36,14 +28,13 @@ dns:
 proxy-providers:
   subscribe:
     type: file
-    url:
-    path: "./profiles/proxy_providers/subscribe.yaml"
+    path: ./profiles/proxy_providers/subscribe.yaml
     interval: 10
     proxy: DIRECT
     health-check:
       enable: false
       interval: 600
-      url: https://cp.cloudflare.com
+      url: "http://cp.cloudflare.com/generate_204"
 proxies:
   - name: "s1"
     type: ss
@@ -74,7 +65,7 @@ proxy-groups:
   - name: "BALANCE"
     type: load-balance
     strategy: consistent-hashing
-    interval: 10
+    interval: 300
     url: "http://cp.cloudflare.com/generate_204"
     proxies:
       - s1
@@ -87,8 +78,8 @@ rule-providers:
     interval: 10
     format: yaml
     size-limit: 0
-    url:
-    path: "./profiles/rulesets/tsui.yaml"
+    url: "https://cdn.jsdmirror.com/gh/cuiqg/settings/clash/rulesets/tsui.yaml"
+    path: ./profiles/rulesets/tsui.yaml
     proxy: DIRECT
 
 rules:
