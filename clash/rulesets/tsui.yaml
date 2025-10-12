@@ -21,6 +21,9 @@ payload:
   - DOMAIN-SUFFIX,github.dev
   - DOMAIN-SUFFIX,github.blog
 
+  # Docker
+  - DOMAIN-SUFFIX,docker.com
+  - DOMAIN-SUFFIX,docker.io
   # ChatGPT
   - DOMAIN-SUFFIX,chatgpt.com
 
