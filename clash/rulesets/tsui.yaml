@@ -24,6 +24,11 @@ payload:
   # Docker
   - DOMAIN-SUFFIX,docker.com
   - DOMAIN-SUFFIX,docker.io
+
+  # Medium
+  - DOMAIN-SUFFIX,medium.com
+  - DOMAIN-SUFFIX,medium.systems
+  
   # ChatGPT
   - DOMAIN-SUFFIX,chatgpt.com
 
