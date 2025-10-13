@@ -24,6 +24,8 @@ payload:
   # Docker
   - DOMAIN-SUFFIX,docker.com
   - DOMAIN-SUFFIX,docker.io
+  # Vercel  
+  - DOMAIN-SUFFIX,vercel.app
 
   # Medium
   - DOMAIN-SUFFIX,medium.com
