@@ -24,13 +24,25 @@ payload:
   # Docker
   - DOMAIN-SUFFIX,docker.com
   - DOMAIN-SUFFIX,docker.io
-  
-  # Vercel  
+
+  # Vercel
   - DOMAIN-SUFFIX,vercel.app
 
   # Medium
   - DOMAIN-SUFFIX,medium.com
-  
+
+  # Reddit
+  - DOMAIN-SUFFIX,reddit.com
+  - DOMAIN-SUFFIX,redd.it
+  - DOMAIN-SUFFIX,redditmedia.com
+  - DOMAIN-SUFFIX,redditblog.com
+  - DOMAIN-SUFFIX,reddithelp.com
+  - DOMAIN-SUFFIX,redditinc.com
+  - DOMAIN-SUFFIX,redditmail.com
+  - DOMAIN-SUFFIX,redditmedia.com
+  - DOMAIN-SUFFIX,redditspace.com
+  - DOMAIN-SUFFIX,redditstatic.com
+
   # ChatGPT
   - DOMAIN-SUFFIX,chatgpt.com
 
