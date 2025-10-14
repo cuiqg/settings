@@ -16,7 +16,7 @@ jobs:
         run: |
           baseUrl="https://cdn.jsdelivr.net/gh/${{ github.repository }}@latest"
           urls=""
-          for f in `find clash -name "*.yaml" -type f`; do
+          for f in `find clash -name "tsui.yaml" -type f`; do
             urls+="${baseUrl}/${f},"
           done
           echo "urls=${urls%,*}" >> $GITHUB_OUTPUT
