@@ -21,6 +21,9 @@ payload:
   - DOMAIN-SUFFIX,github.dev
   - DOMAIN-SUFFIX,github.blog
 
+  # Gravatar
+  - DOMAIN-SUFFIX,gravatar.com
+
   # Docker
   - DOMAIN-SUFFIX,docker.com
   - DOMAIN-SUFFIX,docker.io
