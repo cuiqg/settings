@@ -50,6 +50,9 @@ payload:
 
   # ChatGPT
   - DOMAIN-SUFFIX,chatgpt.com
+  - DOMAIN-SUFFIX,chat.com
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,sora.com
 
   # Twitter
   - DOMAIN-SUFFIX,twitter.com
